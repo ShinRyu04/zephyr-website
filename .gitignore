@@ -1,0 +1,23 @@
+node_modules/
+dist/
+build/
+.cache/
+
+# env & secret
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# artefak build aplikasi — repo ini HANYA website
+*.msi
+*.exe
+*.nsis
