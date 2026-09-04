@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zephyr — Code faster. Lighter. Yours.</title>
+<link rel="icon" type="image/svg+xml" href="zephyr-logo.svg">
+<meta name="description" content="Code editor desktop Windows dari nol: ringan, terminal multi-AI, MCP port 9222.">
+<meta property="og:title" content="Zephyr — Code faster. Lighter. Yours.">
+<meta property="og:description" content="Code editor desktop Windows dari nol. Installer 5,6 MB, bukan Electron.">
+<meta property="og:image" content="zephyr-icon-512.png">
 <style>
   :root { color-scheme: dark; }
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -12,8 +17,13 @@
     background:#0d1117; color:#e6edf3;
     min-height:100vh; display:flex; flex-direction:column;
   }
-  header { padding:2rem 1.5rem; border-bottom:1px solid #21262d; }
+  header { padding:1.25rem 1.5rem; border-bottom:1px solid #21262d; }
+  .brand { display:flex; align-items:center; gap:.6rem; max-width:900px; margin:0 auto; }
+  .brand img { width:28px; height:28px; display:block; }
+  .brand strong { color:#4f8cff; letter-spacing:.08em; font-size:.95rem; }
   .wrap { max-width:900px; margin:0 auto; padding:2rem 1.5rem; flex:1; }
+  .hero { display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; }
+  .hero img { width:96px; height:96px; flex-shrink:0; }
   h1 { font-size:2.6rem; letter-spacing:-0.02em; }
   h1 span { color:#4f8cff; }
   p.lead { margin-top:.75rem; font-size:1.15rem; color:#8b949e; }
@@ -25,14 +35,20 @@
 </head>
 <body>
 <header>
-  <div class="wrap" style="padding:0">
-    <strong style="color:#4f8cff">ZEPHYR</strong>
+  <div class="brand">
+    <img src="zephyr-logo.svg" alt="Logo Zephyr">
+    <strong>ZEPHYR</strong>
   </div>
 </header>
 <div class="wrap">
-  <h1>Code editor pribadi. <span>Ringan.</span> Cepat. Milik kamu.</h1>
-  <p class="lead">Code editor desktop Windows dari nol — ala VS Code tapi lebih ringan (&lt;400MB idle), terminal multi-AI, MCP, dan tanpa bloat.</p>
-  <div class="tagline">Code faster. Lighter. Yours.</div>
+  <div class="hero">
+    <img src="zephyr-logo.svg" alt="">
+    <div>
+      <h1>Code editor pribadi. <span>Ringan.</span> Cepat. Milik kamu.</h1>
+      <p class="lead">Code editor desktop Windows dari nol — ala VS Code tapi lebih ringan (&lt;400MB idle), terminal multi-AI, MCP, dan tanpa bloat.</p>
+      <div class="tagline">Code faster. Lighter. Yours.</div>
+    </div>
+  </div>
   <div class="badges">
     <span class="badge">Windows</span>
     <span class="badge">Tauri + React</span>
