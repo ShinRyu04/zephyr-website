@@ -48,10 +48,70 @@
   <div class="container">
     <section id="fitur">
       <h2 class="sec-title">Fitur</h2>
-      <div class="fitur-grid"><!-- fase 02 --></div>
+      <div class="fitur-grid">
+        <article class="fitur-card">
+          <div class="fitur-head">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3.5 1.5 8 5 12.5"/><path d="M11 3.5 14.5 8 11 12.5"/></svg>
+            <h3>Editor dari nol</h3>
+          </div>
+          <p>CodeMirror 6, multi-tab, deteksi encoding (UTF-8/BOM/Windows-1252/UTF-16), file &gt;4 MB otomatis mode ringan.</p>
+        </article>
+        <article class="fitur-card">
+          <div class="fitur-head">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="1.5"/><path d="m4.5 6.5 2 2-2 2"/><path d="M8.5 10.5H11"/></svg>
+            <h3>Terminal multi-pane</h3>
+          </div>
+          <p>Sampai 6 pane per tab (PowerShell, cmd, bash, WSL, Private Terminal, pane AI agent CLI, browser pane).</p>
+        </article>
+        <article class="fitur-card">
+          <div class="fitur-head">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5c-3.3 0-6 2.4-6 5.3 0 1.6.8 3 2.1 3.9L3.5 13.5l2.7-1.4c.6.1 1.2.2 1.8.2 3.3 0 6-2.4 6-5.3S11.3 2.5 8 2.5Z"/></svg>
+            <h3>AI panel</h3>
+          </div>
+          <p>Chat streaming 3 adapter (OpenAI, Anthropic, Gemini), katalog model berlogo; API key disimpan di Rust, frontend hanya lihat hasKey.</p>
+        </article>
+        <article class="fitur-card">
+          <div class="fitur-head">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="3.2" r="1.6"/><circle cx="3.2" cy="12" r="1.6"/><circle cx="12.8" cy="12" r="1.6"/><path d="M8 4.8 4 10.5M8 4.8l4 5.7"/></svg>
+            <h3>MCP server :9222</h3>
+          </div>
+          <p>HTTP JSON-RPC dengan Bearer token; agent CLI (Claude Code, Codex, Gemini CLI, opencode) bisa baca &amp; kendalikan jendela; editor_write hanya menyentuh buffer, bukan disk.</p>
+        </article>
+        <article class="fitur-card">
+          <div class="fitur-head">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="3.5" r="1.6"/><path d="M5 5.1v2.9a2 2 0 0 0 2 2h2"/><circle cx="11" cy="12.5" r="1.6"/><path d="M11 12.5v-5A1.5 1.5 0 0 0 9.5 6H6.6"/></svg>
+            <h3>Source control</h3>
+          </div>
+          <p>Status, diff, stage, commit, branch, push/pull/sync; push saat remote lebih baru menawarkan pull dulu.</p>
+        </article>
+        <article class="fitur-card">
+          <div class="fitur-head">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v1.5"/><path d="m5.5 3.5 1 1.5M10.5 3.5 9.5 5"/><rect x="5.5" y="5.5" width="5" height="7" rx="2"/><path d="M5.5 7.5H3.5M10.5 7.5h2M3.5 10.5h2M10 10.5h2.5"/><path d="m6 11.5-1.5 1.5M10 11.5l1.5 1.5"/></svg>
+            <h3>Bahasa &amp; debug</h3>
+          </div>
+          <p>LSP per bahasa (completion, hover, go-to-def, diagnostics, rename), debugger DAP (js-debug) dengan breakpoint, step, watch.</p>
+        </article>
+      </div>
     </section>
 
-    <div class="angka-strip"><!-- fase 02 --></div>
+    <div class="angka-strip">
+      <div class="angka-blok">
+        <div class="angka">5,6 MB</div>
+        <div class="angka-label">ukuran installer NSIS</div>
+      </div>
+      <div class="angka-blok">
+        <div class="angka">&lt;400 MB</div>
+        <div class="angka-label">RAM idle (VS Code biasanya 400–700)</div>
+      </div>
+      <div class="angka-blok">
+        <div class="angka">6</div>
+        <div class="angka-label">pane terminal maksimal per tab</div>
+      </div>
+      <div class="angka-blok">
+        <div class="angka">20+</div>
+        <div class="angka-label">metode MCP di port 9222</div>
+      </div>
+    </div>
 
     <section class="screenshot-sec">
       <!-- fase 03 -->
