@@ -114,12 +114,70 @@
     </div>
 
     <section class="screenshot-sec">
-      <!-- fase 03 -->
+      <figure class="screenshot-fig">
+        <img src="assets/shot-editor.png" alt="Zephyr 1.1.0 — editor CodeMirror, explorer, dan terminal multi-pane" width="1440" height="810">
+        <figcaption>Zephyr 1.1.0 — editor, explorer, terminal multi-pane.</figcaption>
+      </figure>
+      <figure class="screenshot-fig shot-dua">
+        <img src="assets/shot-scm.png" alt="Source control Zephyr dengan daftar perubahan" width="1440" height="810">
+        <figcaption>Source control dengan perubahan nyata.</figcaption>
+      </figure>
     </section>
 
     <section id="instal">
       <h2 class="sec-title">Instal</h2>
-      <!-- fase 03 -->
+      <p class="instal-intro">Butuh Windows 10/11 dan WebView2 Runtime — WebView2 sudah ada di Windows 11, jadi biasanya langsung jalan.</p>
+
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Unduh installer</strong>
+          <div class="codeblock">Zephyr_1.1.0_x64-setup.exe</div>
+          <p>Dari halaman <a href="https://github.com/ShinRyu04/Zephyr/releases" target="_blank" rel="noopener">Releases GitHub</a>.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Jalankan installer</strong>
+          <p>SmartScreen mungkin memperingatkan karena installer belum ditandatangani; klik <span class="code-inline">More info</span> &rarr; <span class="code-inline">Run anyway</span>.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>Selesai</strong>
+          <p>Zephyr terbuka. Mulai dengan <span class="code-inline">Open Folder</span> untuk membuka proyek.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>(Opsional) Pasang ekstensi</strong>
+          <p>Buka panel Extensions &rarr; Marketplace, cari &amp; install <span class="code-inline">.vsix</span> dari Open VSX. Ekstensi v1 membaca manifest (bahasa, tema, snippet, command) — kode JS ekstensi <strong>tidak dijalankan</strong> demi keamanan.</p>
+        </div>
+      </div>
+
+      <div class="catatan">
+        <h3>Catatan penting</h3>
+        <ul>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M8 7.2v3.3"/><path d="M8 4.8v.4"/></svg>
+            Ekstensi tidak harus dari VS Code Marketplace; Zephyr pakai Open VSX.
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M8 7.2v3.3"/><path d="M8 4.8v.4"/></svg>
+            Installer tidak ditandatangani &rarr; SmartScreen warning adalah hal normal.
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M8 7.2v3.3"/><path d="M8 4.8v.4"/></svg>
+            Data &amp; settings disimpan di <code>%APPDATA%\zephyr\</code> — hapus folder itu untuk reset penuh.
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="faq">

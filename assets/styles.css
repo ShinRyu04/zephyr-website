@@ -329,6 +329,17 @@ section { padding: 56px 0 8px; }
   white-space: nowrap;
 }
 
+.code-inline {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 5px;
+  color: var(--text);
+  white-space: nowrap;
+}
+
 .catatan {
   margin-top: 28px;
   padding: 14px 16px;
