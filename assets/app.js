@@ -1,7 +1,3 @@
-// Zephyr website — interaksi minimal.
-// Sticky header + accordion FAQ. Tidak ada animasi scroll-reveal,
-// tidak ada counter angka, tidak ada parallax.
-
 const header = document.getElementById('site-header');
 if (header) {
   const onScroll = () => header.classList.toggle('is-sticky', window.scrollY > 8);
