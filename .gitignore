@@ -1,11 +1,15 @@
 node_modules/
+.next/
+out/
 dist/
 build/
 .cache/
+.turbo/
 
 # env & secret
 .env
 .env.*
+!.env.example
 *.key
 *.pem
 secrets.json
@@ -21,3 +25,10 @@ desktop.ini
 *.msi
 *.exe
 *.nsis
+
+# next
+next-env.d.ts
+*.tsbuildinfo
+
+# tool cache
+.playwright-mcp/
