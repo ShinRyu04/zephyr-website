@@ -1,9 +1,16 @@
-const isProd = process.env.NODE_ENV === "production"
-
 const repo = "zephyr-website"
 const owner = "ShinRyu04"
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? (isProd ? "" : "")
+const isProd = process.env.NODE_ENV === "production"
+
+const isUserSite =
+  repo.toLowerCase() === `${owner.toLowerCase()}.github.io`.toLowerCase()
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? (isProd && !isUserSite ? `/${repo}` : "")
+
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  `https://${owner.toLowerCase()}.github.io${isUserSite ? "" : `/${repo}`}`
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -14,9 +21,7 @@ const nextConfig = {
   basePath,
   assetPrefix: basePath || undefined,
   env: {
-    NEXT_PUBLIC_SITE_URL:
-      process.env.NEXT_PUBLIC_SITE_URL ??
-      `https://${owner.toLowerCase()}.github.io/${repo}`,
+    NEXT_PUBLIC_SITE_URL: siteUrl,
   },
 }
 

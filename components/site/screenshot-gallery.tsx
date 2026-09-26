@@ -4,6 +4,7 @@ import Image from "next/image"
 import { useCallback, useEffect, useRef, useState } from "react"
 
 import { cn } from "@/lib/cn"
+import { BASE_PATH } from "@/lib/site"
 
 interface Shot {
   src: string
@@ -192,7 +193,7 @@ export function ScreenshotGallery() {
                 <figure>
                   <span className="block overflow-hidden rounded-xl border border-line transition-colors hover:border-line-2">
                     <Image
-                      src={shot.src}
+                      src={`${BASE_PATH}${shot.src}`}
                       alt={shot.alt}
                       width={shot.width}
                       height={shot.height}
@@ -304,7 +305,7 @@ function Lightbox({
 
         <div className="bg-ink-2">
           <Image
-            src={shot.src}
+            src={`${BASE_PATH}${shot.src}`}
             alt={shot.alt}
             width={shot.width}
             height={shot.height}

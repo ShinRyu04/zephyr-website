@@ -19,6 +19,8 @@ export const VERSION = "1.1.11"
 export const SIZE_ON_DISK = "9.5 MB"
 export const MCP_PORT = 9222
 
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? ""
+
 export const RELEASE = `v${VERSION}`
 export const RELEASE_TAG = `v${VERSION}`
 

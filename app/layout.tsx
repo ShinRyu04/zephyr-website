@@ -4,7 +4,7 @@ import { Inter, JetBrains_Mono } from "next/font/google"
 import { SiteFooter } from "@/components/site/footer"
 import { SiteHeader } from "@/components/site/header"
 import { THEME_BOOTSTRAP, ThemeProvider } from "@/components/theme-provider"
-import { SITE } from "@/lib/site"
+import { BASE_PATH, SITE } from "@/lib/site"
 
 import "./globals.css"
 
@@ -59,8 +59,8 @@ export const metadata: Metadata = {
     description: SITE.description,
   },
   icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-    shortcut: ["/icon.svg"],
+    icon: [{ url: `${BASE_PATH}/icon.svg`, type: "image/svg+xml" }],
+    shortcut: [`${BASE_PATH}/icon.svg`],
   },
   robots: { index: true, follow: true },
 }

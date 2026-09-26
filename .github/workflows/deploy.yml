@@ -15,6 +15,7 @@ concurrency:
 
 env:
   NEXT_PUBLIC_SITE_URL: https://shinryu04.github.io/zephyr-website
+  NEXT_PUBLIC_BASE_PATH: /zephyr-website
 
 jobs:
   build:
