@@ -122,7 +122,7 @@ const FILTERS = [
 ] as const
 
 const CHIP_CLASS =
-  "shrink-0 rounded-full border px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-[0.12em]"
+              "inline-flex min-h-11 shrink-0 items-center rounded-full border px-3.5 py-1.5 font-mono text-[11px] uppercase tracking-[0.12em]"
 
 function matches(shot: Shot, filter: string) {
   if (filter === "All") return true
@@ -297,7 +297,7 @@ function Lightbox({
             type="button"
             onClick={onClose}
             aria-label="Close screenshot viewer"
-            className="shrink-0 rounded-md border border-line px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.12em] text-fg-2 transition-colors hover:border-line-2 hover:text-fg"
+            className="inline-flex min-h-11 shrink-0 items-center rounded-md border border-line px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.12em] text-fg-2 transition-colors hover:border-line-2 hover:text-fg"
           >
             Close
           </button>
@@ -320,7 +320,7 @@ function Lightbox({
             type="button"
             onClick={() => onStep(-1)}
             aria-label="Previous screenshot"
-            className="rounded-md border border-line px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.12em] text-fg-2 transition-colors hover:border-line-2 hover:text-fg"
+            className="inline-flex min-h-11 items-center rounded-md border border-line px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.12em] text-fg-2 transition-colors hover:border-line-2 hover:text-fg"
           >
             Prev
           </button>
@@ -332,7 +332,7 @@ function Lightbox({
             type="button"
             onClick={() => onStep(1)}
             aria-label="Next screenshot"
-            className="rounded-md border border-line px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.12em] text-fg-2 transition-colors hover:border-line-2 hover:text-fg"
+            className="inline-flex min-h-11 items-center rounded-md border border-line px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.12em] text-fg-2 transition-colors hover:border-line-2 hover:text-fg"
           >
             Next
           </button>

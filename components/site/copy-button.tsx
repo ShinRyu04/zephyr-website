@@ -23,7 +23,7 @@ export function CopyButton({ text }: { text: string }) {
       onClick={copy}
       aria-label={done ? "Copied" : "Copy file name"}
       className={cn(
-        "inline-flex size-5 shrink-0 items-center justify-center rounded transition-colors",
+        "inline-flex size-9 shrink-0 items-center justify-center rounded transition-colors",
         done ? "text-gain" : "text-fg-3 hover:text-fg",
       )}
     >

@@ -28,7 +28,7 @@ export function SiteFooter() {
                 <h2 className="font-mono text-[11px] uppercase tracking-[0.14em] text-fg-3">
                   {group.heading}
                 </h2>
-                <ul className="mt-4 space-y-2.5">
+                <ul className="mt-4 space-y-1">
                   {group.links.map((link) => {
                     const external = "external" in link && link.external
                     return (
@@ -38,14 +38,14 @@ export function SiteFooter() {
                             href={link.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm text-fg-2 transition-colors hover:text-fg"
+                            className="inline-flex min-h-8 items-center text-sm text-fg-2 transition-colors hover:text-fg"
                           >
                             {link.label}
                           </a>
                         ) : (
                           <Link
                             href={link.href}
-                            className="text-sm text-fg-2 transition-colors hover:text-fg"
+                            className="inline-flex min-h-8 items-center text-sm text-fg-2 transition-colors hover:text-fg"
                           >
                             {link.label}
                           </Link>
